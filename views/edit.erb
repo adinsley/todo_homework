@@ -1,5 +1,5 @@
 <% @task.each do |task| %>
-<form action="/tasks/<%=task['id']%>" method='post'>
+<form action="/tasks/<%=task['id']%>" method ='post'>
   <label for='name'>Task</label>
   <input type='text' name='name' value = '<%=task['name']%>'>
 

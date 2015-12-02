@@ -9,4 +9,9 @@
 
  <a href= "/tasks/<%= task['id']%>/edit">Edit Task</a>
 
+ <form action="/tasks/<%=task['id'] %>/delete" method='post'>
+       <button>Delete Task</button>
+     </form>
+
+
   <%end%>

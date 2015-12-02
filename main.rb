@@ -58,6 +58,13 @@ end
 
 post '/tasks/:id/delete' do
   #Delete tasks
+  @name = params[:name]
+  @details = params[:details]
+  sql = "DELETE from tasks WHERE id = #{params[:id]}"
+
+
+  run_sql(sql)
+  redirect to ('/tasks')
 end
 
 def run_sql(sql)

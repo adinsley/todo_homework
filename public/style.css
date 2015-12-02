@@ -1,0 +1,28 @@
+body {
+background-color: #5891c0;
+color: white;
+}
+
+header {
+background-color: pink;
+position:fixed;
+padding:0;
+margin:0;
+top:0;
+left:0;
+width: 100%;
+
+
+}
+
+a {
+color: white;
+text-decoration: none;
+font-size: 2em;
+
+}
+
+ section a {
+  font size: 0.8em;
+  color: red;
+}
