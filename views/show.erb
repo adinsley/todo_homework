@@ -1,0 +1,12 @@
+<h1>Inspect Task</h1>
+
+<% @task.each do |task| %>
+  <h5>Task Name</h5>
+  <p><%=task['name']%></p>
+
+  <h5>Task Details</h5>
+  <p><%=task['details']%></p>
+
+ <a href= "/tasks/<%= task['id']%>/edit">Edit Task</a>
+
+  <%end%>
